@@ -38,5 +38,24 @@ while h<43:
                     h+=1
                 
 print(sudoku)
+
+#####################INSERIMENTO POSIZIONE MOSSA
+cont=0
+while cont<43:
+    iMossa=int(input('Inserire indice di riga '))
+    jMossa=int(input('Inserire indice di colonna '))
+    
+    if (sudoku[iMossa][jMossa]!=0):
+        print('ERREORE! Poszione già occupata')
+        
+    else:
+        mossa=input('Inserire il numero')
+        if mossa==sudokuCopy[iMossa][jMossa]:
+            sudoku[iMossa][jMossa]=mossa
+            cont+=1
+            print(sudoku)
+        else:
+            print('Mossa errata')
+print('Hai vinto')
         
         
