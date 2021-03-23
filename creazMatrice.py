@@ -26,6 +26,7 @@ print(sudoku)                    #stampa a video
 import copy
 
 sudokuCopy = copy.deepcopy(sudoku)
+
 h=0
 while h<43:
     for i in range(0,9): 
@@ -49,13 +50,16 @@ while cont<43:
         print('ERREORE! Poszione già occupata')
         
     else:
-        mossa=input('Inserire il numero')
-        if mossa==sudokuCopy[iMossa][jMossa]:
-            sudoku[iMossa][jMossa]=mossa
-            cont+=1
-            print(sudoku)
+        mossa=int(input('Inserire il numero '))
+        giusto=sudokuCopy[iMossa][jMossa]
+        
+        if mossa != giusto:
+            print('Mossa errata') 
+        
         else:
-            print('Mossa errata')
+           sudoku[iMossa][jMossa]= mossa
+           print(sudoku)
+           cont+=1
 print('Hai vinto')
         
         
