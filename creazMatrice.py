@@ -9,9 +9,9 @@ for i in range(81):
     val1=random.randint(1,9)
     val2=random.randint(1,9)
 
-    for i in range(0,9):
+    for i in range(0,9): #riga
 
-        for j in range(0,9):
+        for j in range(0,9): #colonna
 
             if sudoku[i][j]==val2:
                 sudoku[i][j]=val1
