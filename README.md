@@ -1,2 +1,2 @@
 # Sudoku
-!{img}{sudoFlowChart.png}
+!{Img}{sudoFlowChart.png}
