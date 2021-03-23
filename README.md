@@ -1,1 +1,2 @@
 # Sudoku
+!{img}{sudoFlowChart.png}
