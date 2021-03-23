@@ -22,3 +22,21 @@ for i in range(81): #numero di volte che desidero cambiare i valori nelle celle
 print(sudoku)                    #stampa a video
 
 
+###############COPERTUTA 38 CELLE - livello facile####################
+import copy
+
+sudokuCopy = copy.deepcopy(sudoku)
+h=0
+while h<43:
+    for i in range(0,9): 
+        for j in range(0,9):
+            condizione=random.choice([True,False])
+                      
+            if sudoku[i][j]!=0 and condizione==True:
+                if h<43:
+                    sudoku[i][j]=0
+                    h+=1
+                
+print(sudoku)
+        
+        
