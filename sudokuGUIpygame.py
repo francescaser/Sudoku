@@ -233,14 +233,14 @@ def main():
                     i, j = board.selected
                     if board.cubes[i][j].temp != 0:
                         if board.place(board.cubes[i][j].temp):
-                            print("Success")
+                            print("Complimenti!")
                         else:
-                            print("Wrong")
+                            print("Mossa Errata")
                             strikes += 1
                         key = None
 
                         if board.is_finished():
-                            print("You win!!!")
+                            print("Hai Vinto!!")
                             run = False
 
             if event.type == pygame.MOUSEBUTTONDOWN:
