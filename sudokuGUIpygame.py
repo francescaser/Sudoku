@@ -1,5 +1,5 @@
-# GUI.py
-# RUN THIS FILE
+# sudokuGUIpygame.py
+# Questo è il file eseguibile!
 import pygame
 import random
 from risolutore import risolvi, validata
