@@ -2,7 +2,7 @@
 # Questo è il file eseguibile!
 import pygame
 import random
-from risolutore import risolvi, validata
+from Risolutore import risolvi, validata
 import time 
 pygame.font.init()
 
